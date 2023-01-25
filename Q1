@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int x,n;
+	int op;
+	printf("1.Addition\n 2.Substraction\n 3.Multiplication\n 4.Division\n");
+	printf("enter the values of x & n");
+	scanf("%d%d",&x,&n);
+	printf("enter your choice:");
+	scanf("%d",&op);
+	switch(op)
+	{
+	case 1:
+    printf("sum of %d and %d is : %d",x,n,x+n);
+	break;
+	case 2:
+	printf("difference of %d and %d is %d",x,n,x-n);
+    break;
+	case 3:
+	printf("division of %d an%d is %d",x,n,x/n);
+	break;
+	default:
+	printf("enter the correct choice");
+	break;
+	}
+	return 0;
+	getch();
+	}
