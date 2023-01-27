@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	int array[23];
+	int i,sum=0,n;
+	int*ptr;
+	printf("enter the size of array:");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		printf("enter element: ");
+		scanf("%d",&array[i]);
+	}
+	ptr=array;
+	for(i=0;i<5;i++)
+	{
+		sum=sum+*ptr;
+		ptr++;
+	}
+	printf("sum:%d",sum);
+}
